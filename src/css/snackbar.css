@@ -1,0 +1,64 @@
+.delay {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.delay-input {
+  display: block;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+fieldset {
+  width: 360px;
+  height: 64px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+input[name='state'] {
+  margin-top: 24px;
+}
+
+legend {
+  text-align: left;
+}
+
+.radio-label {
+  margin-right: 48px;
+}
+button {
+  background: rgba(78, 117, 255, 1);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  border-style: none;
+  border-radius: 8px;
+  width: 360px;
+  height: 40px;
+  text-align: center;
+}
+.form {
+  margin-left: 156px;
+}
