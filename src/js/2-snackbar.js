@@ -6,8 +6,6 @@ const radioBtn = document.getElementsByName('state');
 const inputForm = document.querySelector('form');
 
 let delayValue;
-let radioBtnValue;
-
 
 const makePromise = () => {
     event.preventDefault();
@@ -15,23 +13,13 @@ const makePromise = () => {
     delayValue = Math.round(form.elements.delay.value.trim());
     console.log(delayValue);
 
-    for (let i = 0; i < radioBtn.length; i++) {
-        if (radioBtn[i].checked) {
-            radioBtnValue = radioBtn[i].value;
-            console.log(radioBtnValue);
-        }
-    }
     return new Promise((resolve, reject) => {
-        const canFulfill = radioBtnValue = "Fulfilled";
         setTimeout(() => {
-            for (let i = 0; i < radioBtn.length; i++){
                 if (radioBtn[0].checked) {
-                resolve(`Fulfilled promise in ${delayValue}ms`
-)
+                resolve(`Fulfilled promise in ${delayValue}ms`)
             }
             else if(radioBtn[1].checked) {
                 reject(`❌ Rejected promise in ${delayValue}ms`)
-            }
             }
             
         }, Math.floor(delayValue));
@@ -64,6 +52,43 @@ const makePromise = () => {
 
 
 
+
+
+
+
+
+
+
+
+// const makePromise = () => {
+//     event.preventDefault();
+//     const form = event.target;
+//     delayValue = Math.round(form.elements.delay.value.trim());
+//     console.log(delayValue);
+
+//     for (let i = 0; i < radioBtn.length; i++) {
+//         if (radioBtn[i].checked) {
+//             radioBtnValue = radioBtn[i].value;
+//             console.log(radioBtnValue);
+//         }
+//     }
+//     return new Promise((resolve, reject) => {
+//         const canFulfill = radioBtnValue = "Fulfilled";
+//         setTimeout(() => {
+//             for (let i = 0; i < radioBtn.length; i++){
+//                 if (radioBtn[0].checked) {
+//                 resolve(`Fulfilled promise in ${delayValue}ms`
+// )
+//             }
+//             else if(radioBtn[1].checked) {
+//                 reject(`❌ Rejected promise in ${delayValue}ms`)
+//             }
+//             }
+            
+//         }, Math.floor(delayValue));
+//     });
+
+// };
 
 
 
